@@ -154,51 +154,38 @@ main {
   margin: 0 auto;
 }
 
-.ability-buttons {
-  flex: 1 1 240px;
+.radar-chart-wrap canvas {
+  cursor: pointer;
+}
+
+.ability-detail-panel {
+  flex: 1 1 280px;
+  max-height: 460px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.ability-detail-panel h3 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
-.ability-buttons button {
-  text-align: left;
-  padding: 12px 16px;
-  border-radius: 10px;
-  border: 1px solid #e1e3f5;
-  background: #f7f8ff;
-  color: var(--text);
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.ability-buttons button .level {
-  font-weight: 800;
-  color: var(--indigo);
-}
-
-.ability-buttons button.active,
-.ability-buttons button:hover {
+.level-badge {
   background: var(--indigo);
   color: #fff;
-  border-color: var(--indigo);
-}
-
-.ability-buttons button.active .level,
-.ability-buttons button:hover .level {
-  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 2px 10px;
+  border-radius: 999px;
 }
 
 .achievement-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 14px;
-  margin-top: 8px;
 }
 
 .achievement-card {
@@ -359,6 +346,27 @@ main {
   margin: 2px 4px 2px 0;
 }
 
+.county-detail .record-list {
+  font-size: 0.85rem;
+}
+
+.county-detail .toggle-more {
+  margin-top: 8px;
+  background: #eef0fc;
+  color: var(--indigo);
+  border: 1px solid #d8dcfb;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.county-detail .toggle-more:hover {
+  background: var(--indigo);
+  color: #fff;
+}
+
 .internal-trainings {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -466,6 +474,30 @@ button:disabled {
 .result-box.loading {
   color: #8a8a96;
   font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.thinking-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.thinking-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--indigo);
+  animation: thinking-bounce 1.2s infinite ease-in-out;
+}
+
+.thinking-dots span:nth-child(2) { animation-delay: 0.15s; }
+.thinking-dots span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes thinking-bounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40% { transform: scale(1); opacity: 1; }
 }
 
 .result-box.error {

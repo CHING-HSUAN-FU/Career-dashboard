@@ -27,9 +27,10 @@ async function fetchJSON(url, options) {
 function initRadar() {
   const abilities = EXPERIENCES.core_abilities;
   const levels = abilities.map(a => EXPERIENCES.ability_levels[a]);
+  let selectedIndex = 0;
 
   const ctx = document.getElementById('radar-chart');
-  new Chart(ctx, {
+  const chart = new Chart(ctx, {
     type: 'radar',
     data: {
       labels: abilities,
@@ -49,28 +50,47 @@ function initRadar() {
           min: 0,
           max: 10,
           ticks: { stepSize: 2, showLabelBackdrop: false },
-          pointLabels: { font: { size: 11 } }
+          pointLabels: {
+            font: (context) => ({
+              size: context.index === selectedIndex ? 14 : 11,
+              weight: context.index === selectedIndex ? '800' : '500'
+            }),
+            color: (context) => context.index === selectedIndex ? '#4f46e5' : '#6b6b7a'
+          }
         }
       },
-      plugins: { legend: { display: false } }
+      plugins: { legend: { display: false } },
+      onClick: (event, _elements, chartInstance) => {
+        const scale = chartInstance.scales.r;
+        const pos = Chart.helpers.getRelativePosition(event, chartInstance);
+        for (let i = 0; i < abilities.length; i++) {
+          const labelPos = scale.getPointLabelPosition(i);
+          if (pos.x >= labelPos.left && pos.x <= labelPos.right && pos.y >= labelPos.top && pos.y <= labelPos.bottom) {
+            selectAbility(i);
+            break;
+          }
+        }
+      }
     }
   });
 
-  const container = document.getElementById('ability-buttons');
-  abilities.forEach((ability, i) => {
-    const btn = document.createElement('button');
-    btn.innerHTML = `<span>${ability}</span><span class="level">${levels[i]}/10</span>`;
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#ability-buttons button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderAchievements(ability);
-    });
-    container.appendChild(btn);
-  });
+  function selectAbility(i, scrollIntoView = true) {
+    selectedIndex = i;
+    chart.update();
+    renderAchievements(abilities[i]);
+
+    const titleEl = document.getElementById('ability-detail-title');
+    titleEl.innerHTML = `${abilities[i]} <span class="level-badge">${levels[i]}/10</span>`;
+
+    const panel = document.getElementById('ability-detail-panel');
+    panel.scrollTop = 0;
+    if (scrollIntoView) {
+      document.getElementById('section-radar').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   // 預設顯示第一項
-  container.querySelector('button').classList.add('active');
-  renderAchievements(abilities[0]);
+  selectAbility(0, false);
 }
 
 function renderAchievements(ability) {
@@ -197,17 +217,36 @@ function showCountyDetail(countyName) {
   const topicCounts = {};
   records.forEach(r => { topicCounts[r.topicLabel] = (topicCounts[r.topicLabel] || 0) + 1; });
 
-  const recentList = records.slice(-6).reverse().map(r =>
-    `<li>${r.period}｜${r.school}（${r.topicLabel}）</li>`
-  ).join('');
+  const allRecords = records.slice().reverse();
+  const VISIBLE_LIMIT = 10;
+  const visible = allRecords.slice(0, VISIBLE_LIMIT);
+  const rest = allRecords.slice(VISIBLE_LIMIT);
+
+  const toItem = r => `<li>${r.period}｜${r.school}（${r.topicLabel}）</li>`;
+  const visibleList = visible.map(toItem).join('');
+  const restList = rest.map(toItem).join('');
 
   detail.innerHTML = `
     <strong>${countyName}</strong>　共 ${records.length} 場
     <div style="margin: 8px 0;">
       ${Object.entries(topicCounts).map(([topic, n]) => `<span class="topic-tag">${topic} ×${n}</span>`).join('')}
     </div>
-    <ul style="margin: 8px 0 0; padding-left: 18px;">${recentList}</ul>
+    <ul class="record-list" style="margin: 8px 0 0; padding-left: 18px;">${visibleList}</ul>
+    ${rest.length > 0 ? `
+      <ul class="record-list extra" style="display: none; margin: 0; padding-left: 18px;">${restList}</ul>
+      <button class="toggle-more">展開更多（${rest.length}）</button>
+    ` : ''}
   `;
+
+  if (rest.length > 0) {
+    const toggleBtn = detail.querySelector('.toggle-more');
+    const extraList = detail.querySelector('.record-list.extra');
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = extraList.style.display === 'none';
+      extraList.style.display = isHidden ? '' : 'none';
+      toggleBtn.textContent = isHidden ? '收合' : `展開更多（${rest.length}）`;
+    });
+  }
 }
 
 /* ---------------- 區塊三：數位分身對話 ---------------- */
@@ -239,7 +278,7 @@ function initChat() {
     const query = input.value.trim();
     if (!query) return;
 
-    setResult(result, '思考中...', 'loading');
+    setResult(result, '思考中', 'loading');
     try {
       const data = await fetchJSON('/api/chat', {
         method: 'POST',
@@ -258,8 +297,12 @@ function initChat() {
 }
 
 function setResult(el, text, mode) {
-  el.textContent = text;
   el.classList.remove('loading', 'error');
+  if (mode === 'loading') {
+    el.innerHTML = `<span>${text}</span><span class="thinking-dots"><span></span><span></span><span></span></span>`;
+  } else {
+    el.textContent = text;
+  }
   if (mode) el.classList.add(mode);
 }
 
