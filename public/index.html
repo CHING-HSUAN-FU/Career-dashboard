@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>傅敬軒｜學涯 ＆ 職涯履歷儀表板</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">CAREER &amp; LEARNING DASHBOARD</p>
+      <h1 class="hero-title">傅敬軒 <span class="hero-title-en">Sam Fu</span></h1>
+      <p class="hero-role">數位 × 教育 × 國文　｜　數位教材研發企劃 ＆ 資訊教育研究所碩士生</p>
+      <div class="hero-keywords">
+        <span class="keyword-pill">教育現場 × AI 轉譯者</span>
+        <span class="keyword-pill">百場研習實戰派</span>
+        <span class="keyword-pill">流程設計師</span>
+        <span class="keyword-pill">同理心驅動的產品企劃</span>
+      </div>
+      <p class="hero-tagline">六年教材企劃與教學現場經驗．歡迎透過下方儀表板快速認識我！</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- 區塊一：能力版圖 -->
+    <section class="card" id="section-radar">
+      <h2><span class="tag">01</span> 能力版圖：數位 × 教育 × 國文</h2>
+      <p class="hint">雷達圖呈現六大核心能力的發展程度，點擊任一能力標籤，下方會列出對應的具體成果。</p>
+      <div class="radar-layout">
+        <div class="radar-chart-wrap">
+          <canvas id="radar-chart"></canvas>
+        </div>
+        <div class="ability-buttons" id="ability-buttons"></div>
+      </div>
+      <div id="achievement-list" class="achievement-list"></div>
+    </section>
+
+    <!-- 區塊二：全台研習地圖 -->
+    <section class="card" id="section-map">
+      <h2><span class="tag">02</span> 全台教育推廣足跡</h2>
+      <p class="hint">縣市顏色深淺代表對外數位研習場次密度，點擊縣市可查看該縣市的研習詳情；切換頁籤可查看對內教育訓練統計。</p>
+      <div class="map-summary" id="map-summary"></div>
+      <div class="map-layout">
+        <div class="map-wrap">
+          <svg id="tw-map" viewBox="0 0 580 800" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="map-legend" id="map-legend"></div>
+        </div>
+        <div class="map-side">
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="county">縣市研習詳情</button>
+            <button class="tab-btn" data-tab="internal">對內教育訓練</button>
+          </div>
+          <div class="tab-content active" id="tab-county">
+            <div id="county-detail" class="county-detail">點擊地圖上的縣市查看詳情</div>
+          </div>
+          <div class="tab-content" id="tab-internal">
+            <div id="internal-trainings" class="internal-trainings"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 區塊三：數位分身對話 -->
+    <section class="card" id="section-chat">
+      <h2><span class="tag">03</span> 與我的數位分身對話</h2>
+      <p class="hint">輸入任何你想了解的職場情境或挑戰，例如：「你有沒有處理過專案時程delay的經驗？」</p>
+      <div class="suggested-questions" id="suggested-questions"></div>
+      <div class="input-row">
+        <input type="text" id="chat-input" placeholder="輸入問題..." />
+        <button id="chat-btn">詢問</button>
+      </div>
+      <div class="result-box" id="chat-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>本儀表板由 Gemini API 驅動數位分身對話，作為「生成式AI的人文導論」期末專案。</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

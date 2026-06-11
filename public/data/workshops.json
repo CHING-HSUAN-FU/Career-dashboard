@@ -1,0 +1,993 @@
+{
+  "summary": {
+    "total": 102,
+    "counties_covered": 12,
+    "by_county": {
+      "台中市": 38,
+      "新北市": 9,
+      "屏東縣": 3,
+      "台北市": 29,
+      "嘉義縣": 1,
+      "桃園市": 1,
+      "南投縣": 5,
+      "高雄市": 10,
+      "台南市": 3,
+      "苗栗縣": 1,
+      "宜蘭縣": 1,
+      "嘉義市": 1
+    },
+    "by_topic": {
+      "一般共通數位應用": 68,
+      "國文創意特色研習": 9,
+      "互動教學工具": 5,
+      "其他領域應用": 4,
+      "AI融入教學/生成式AI應用": 16
+    }
+  },
+  "internal_trainings": [
+    {
+      "category": "新人教育訓練",
+      "items": [
+        "112教學科新人教育訓練-專案控管",
+        "113教學科新人教育訓練-專案控管"
+      ]
+    },
+    {
+      "category": "AI趨勢與素養",
+      "items": [
+        "面對AI的工作思考",
+        "經理AI相關閱讀心得分享",
+        "Gemini問問功能介紹",
+        "三大AI頂尖對決(ChatGPT/Claude/Gemini)"
+      ]
+    },
+    {
+      "category": "生成式AI應用指引",
+      "items": [
+        "文化藝術應用生成式AI指引(2025-07)"
+      ]
+    },
+    {
+      "category": "專業領域培訓",
+      "items": [
+        "著作權相關",
+        "文案廣告設計",
+        "GA數據分析"
+      ]
+    },
+    {
+      "category": "教學策略研討",
+      "items": [
+        "公司內訓_中小學的數位教學策略",
+        "SEL社會情緒學習"
+      ]
+    },
+    {
+      "category": "志工與經驗分享",
+      "items": [
+        "翰文教志工線上研習",
+        "112上入校數位研習經驗分享"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "ws-1",
+      "period": "109下",
+      "date": "0911",
+      "county": "台中市",
+      "school": "台中向上國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-2",
+      "period": "109下",
+      "date": "1020",
+      "county": "新北市",
+      "school": "新北鶯歌國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-3",
+      "period": "109下",
+      "date": "1023",
+      "county": "台中市",
+      "school": "台中光榮國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-4",
+      "period": "109下",
+      "date": "1030",
+      "county": "台中市",
+      "school": "台中太平國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-5",
+      "period": "109下",
+      "date": "1106",
+      "county": "台中市",
+      "school": "台中四育國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-6",
+      "period": "109下",
+      "date": "1110",
+      "county": "屏東縣",
+      "school": "屏東潮州國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-7",
+      "period": "109下",
+      "date": "1126",
+      "county": "台北市",
+      "school": "台北麗山國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-8",
+      "period": "109下",
+      "date": "1225",
+      "county": "台中市",
+      "school": "台中四張犁國中",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-9",
+      "period": "109下",
+      "date": "1026",
+      "county": "嘉義縣",
+      "school": "嘉義民生國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-10",
+      "period": "109下",
+      "date": "0413",
+      "county": "桃園市",
+      "school": "桃園新興高中",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-11",
+      "period": "109下",
+      "date": "0916",
+      "county": "台北市",
+      "school": "台北三民國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-12",
+      "period": "110上",
+      "date": "0825",
+      "county": "屏東縣",
+      "school": "屏東中正國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-13",
+      "period": "110上",
+      "date": "0827",
+      "county": "南投縣",
+      "school": "南投名間國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-14",
+      "period": "110上",
+      "date": "0910",
+      "county": "台中市",
+      "school": "台中五權國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-15",
+      "period": "110上",
+      "date": "0914",
+      "county": "新北市",
+      "school": "新北中平國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-16",
+      "period": "110上",
+      "date": "0916",
+      "county": "台北市",
+      "school": "台北三民國中",
+      "topic": "tool",
+      "topicLabel": "互動教學工具"
+    },
+    {
+      "id": "ws-17",
+      "period": "110上",
+      "date": "0928",
+      "county": "台北市",
+      "school": "台北信義國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-18",
+      "period": "110上",
+      "date": "0930",
+      "county": "台北市",
+      "school": "台北麗山國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-19",
+      "period": "110上",
+      "date": "1001",
+      "county": "台中市",
+      "school": "台中西苑國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-20",
+      "period": "110上",
+      "date": "1005",
+      "county": "南投縣",
+      "school": "南投埔里國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-21",
+      "period": "110上",
+      "date": "1007",
+      "county": "台北市",
+      "school": "台北仁愛國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-22",
+      "period": "110上",
+      "date": "1014",
+      "county": "台北市",
+      "school": "台北北安國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-23",
+      "period": "110上",
+      "date": "1015",
+      "county": "台中市",
+      "school": "台中清水國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-24",
+      "period": "110上",
+      "date": "1018",
+      "county": "高雄市",
+      "school": "高雄五甲國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-25",
+      "period": "110上",
+      "date": "1021",
+      "county": "台北市",
+      "school": "台北龍門國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-26",
+      "period": "110上",
+      "date": "1022",
+      "county": "台中市",
+      "school": "台中豐南國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-27",
+      "period": "110上",
+      "date": "1025",
+      "county": "高雄市",
+      "school": "高雄岡山國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-28",
+      "period": "110上",
+      "date": "1103",
+      "county": "台南市",
+      "school": "台南新市國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-29",
+      "period": "110上",
+      "date": "1105",
+      "county": "台中市",
+      "school": "台中日南國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-30",
+      "period": "110上",
+      "date": "1111",
+      "county": "台北市",
+      "school": "台北信義國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-31",
+      "period": "110上",
+      "date": "1119",
+      "county": "台中市",
+      "school": "台中四箴國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-32",
+      "period": "110上",
+      "date": "1122",
+      "county": "高雄市",
+      "school": "高雄七賢國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-33",
+      "period": "110上",
+      "date": "1129",
+      "county": "台中市",
+      "school": "台中崇倫國中",
+      "topic": "other",
+      "topicLabel": "其他領域應用"
+    },
+    {
+      "id": "ws-34",
+      "period": "110上",
+      "date": "1202",
+      "county": "台北市",
+      "school": "台北師大附中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-35",
+      "period": "110上",
+      "date": "1203",
+      "county": "台中市",
+      "school": "台中潭秀國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-36",
+      "period": "110上",
+      "date": "0107",
+      "county": "台中市",
+      "school": "台中萬和國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-37",
+      "period": "110下",
+      "date": "0210",
+      "county": "苗栗縣",
+      "school": "苗栗大倫國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-38",
+      "period": "110下",
+      "date": "0214",
+      "county": "高雄市",
+      "school": "高雄明義國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-39",
+      "period": "110下",
+      "date": "0415",
+      "county": "台中市",
+      "school": "台中豐東國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-40",
+      "period": "111上",
+      "date": "0706",
+      "county": "宜蘭縣",
+      "school": "宜蘭復興國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-41",
+      "period": "111上",
+      "date": "0825",
+      "county": "台中市",
+      "school": "台中新社高中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-42",
+      "period": "111上",
+      "date": "0926",
+      "county": "屏東縣",
+      "school": "屏東中正國中",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-43",
+      "period": "111上",
+      "date": "0929",
+      "county": "台北市",
+      "school": "台北達人女中",
+      "topic": "tool",
+      "topicLabel": "互動教學工具"
+    },
+    {
+      "id": "ws-44",
+      "period": "111上",
+      "date": "1007",
+      "county": "台中市",
+      "school": "台中居仁國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-45",
+      "period": "111上",
+      "date": "1015",
+      "county": "台北市",
+      "school": "台師大合作研習",
+      "topic": "tool",
+      "topicLabel": "互動教學工具"
+    },
+    {
+      "id": "ws-46",
+      "period": "111上",
+      "date": "1024",
+      "county": "台中市",
+      "school": "台中東大附中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-47",
+      "period": "111上",
+      "date": "1110",
+      "county": "台北市",
+      "school": "台北信義國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-48",
+      "period": "111上",
+      "date": "1125",
+      "county": "台中市",
+      "school": "台中日南國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-49",
+      "period": "111上",
+      "date": "1129",
+      "county": "新北市",
+      "school": "淡水正德國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-50",
+      "period": "111上",
+      "date": "1201",
+      "county": "台北市",
+      "school": "台北西湖國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-51",
+      "period": "111上",
+      "date": "1222",
+      "county": "台北市",
+      "school": "台北永吉國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-52",
+      "period": "111下",
+      "date": "0316",
+      "county": "台北市",
+      "school": "台北達人女中(綜合領域)",
+      "topic": "other",
+      "topicLabel": "其他領域應用"
+    },
+    {
+      "id": "ws-53",
+      "period": "111下",
+      "date": "0316",
+      "county": "台北市",
+      "school": "台北永吉國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-54",
+      "period": "111下",
+      "date": "0323",
+      "county": "台北市",
+      "school": "台北達人女中(唐詩闖關)",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-55",
+      "period": "111下",
+      "date": "0410",
+      "county": "高雄市",
+      "school": "高雄立德國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-56",
+      "period": "111下",
+      "date": "0420",
+      "county": "新北市",
+      "school": "淡水淡江中學",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-57",
+      "period": "111下",
+      "date": "0426",
+      "county": "台中市",
+      "school": "台中萬和國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-58",
+      "period": "111下",
+      "date": "0511",
+      "county": "台北市",
+      "school": "台北石牌國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-59",
+      "period": "112上",
+      "date": "0824",
+      "county": "南投縣",
+      "school": "南投中興國中",
+      "topic": "other",
+      "topicLabel": "其他領域應用"
+    },
+    {
+      "id": "ws-60",
+      "period": "112上",
+      "date": "0915",
+      "county": "台中市",
+      "school": "台中向上國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-61",
+      "period": "112上",
+      "date": "1005",
+      "county": "台北市",
+      "school": "台北瑠公國中",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-62",
+      "period": "112上",
+      "date": "1020",
+      "county": "台中市",
+      "school": "台中西苑國中",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-63",
+      "period": "112上",
+      "date": "1026",
+      "county": "台北市",
+      "school": "台北大安國中",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-64",
+      "period": "112上",
+      "date": "1107",
+      "county": "新北市",
+      "school": "新北金山高中",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-65",
+      "period": "112上",
+      "date": "1117",
+      "county": "台中市",
+      "school": "台中葳格高中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-66",
+      "period": "112上",
+      "date": "1124",
+      "county": "台中市",
+      "school": "台中日南國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-67",
+      "period": "112上",
+      "date": "1207",
+      "county": "新北市",
+      "school": "新北金陵女中",
+      "topic": "creative",
+      "topicLabel": "國文創意特色研習"
+    },
+    {
+      "id": "ws-68",
+      "period": "112下",
+      "date": "0320",
+      "county": "台中市",
+      "school": "台中衛道中學",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-69",
+      "period": "113上",
+      "date": "0919",
+      "county": "台北市",
+      "school": "台北瑠公國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-70",
+      "period": "113上",
+      "date": "1018",
+      "county": "台中市",
+      "school": "台中崇倫國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-71",
+      "period": "113上",
+      "date": "1025",
+      "county": "台中市",
+      "school": "台中立人國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-72",
+      "period": "113上",
+      "date": "1101",
+      "county": "台中市",
+      "school": "台中光榮國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-73",
+      "period": "113上",
+      "date": "1114",
+      "county": "台北市",
+      "school": "台北大安國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-74",
+      "period": "113上",
+      "date": "1115",
+      "county": "台中市",
+      "school": "台中豐南國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-75",
+      "period": "113上",
+      "date": "0117",
+      "county": "台中市",
+      "school": "台中新民高中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-76",
+      "period": "113下",
+      "date": "0313",
+      "county": "台南市",
+      "school": "台南聖功女中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-77",
+      "period": "113下",
+      "date": "0321",
+      "county": "高雄市",
+      "school": "高雄明誠中學",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-78",
+      "period": "113下",
+      "date": "0411",
+      "county": "台中市",
+      "school": "台中神岡國中",
+      "topic": "tool",
+      "topicLabel": "互動教學工具"
+    },
+    {
+      "id": "ws-79",
+      "period": "113下",
+      "date": "0418",
+      "county": "台中市",
+      "school": "台中立人國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-80",
+      "period": "113下",
+      "date": "0422",
+      "county": "新北市",
+      "school": "新北金山高中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-81",
+      "period": "113下",
+      "date": "0605",
+      "county": "台北市",
+      "school": "台北西湖國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-82",
+      "period": "113下",
+      "date": "0729",
+      "county": "南投縣",
+      "school": "南投三光國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-83",
+      "period": "114上",
+      "date": "0828",
+      "county": "台南市",
+      "school": "台南南新國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-84",
+      "period": "114上",
+      "date": "0916",
+      "county": "南投縣",
+      "school": "南投中興國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-85",
+      "period": "114上",
+      "date": "0925",
+      "county": "台北市",
+      "school": "台北大同國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-86",
+      "period": "114上",
+      "date": "0926",
+      "county": "台中市",
+      "school": "台中居仁國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-87",
+      "period": "114上",
+      "date": "1002",
+      "county": "台北市",
+      "school": "台北瑠公國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-88",
+      "period": "114上",
+      "date": "1017",
+      "county": "台中市",
+      "school": "台中西苑國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-89",
+      "period": "114上",
+      "date": "1114",
+      "county": "台中市",
+      "school": "台中太平國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-90",
+      "period": "114上",
+      "date": "1121",
+      "county": "台中市",
+      "school": "台中梧棲國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-91",
+      "period": "114上",
+      "date": "1121",
+      "county": "台中市",
+      "school": "台中豐南國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-92",
+      "period": "114上",
+      "date": "1211",
+      "county": "台北市",
+      "school": "台北南港國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-93",
+      "period": "114上",
+      "date": "1222",
+      "county": "高雄市",
+      "school": "高雄阿蓮國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-94",
+      "period": "114上",
+      "date": "0112",
+      "county": "高雄市",
+      "school": "高雄旗山國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-95",
+      "period": "114上",
+      "date": "0121",
+      "county": "台北市",
+      "school": "台北三民國中",
+      "topic": "other",
+      "topicLabel": "其他領域應用"
+    },
+    {
+      "id": "ws-96",
+      "period": "114下",
+      "date": "0126",
+      "county": "嘉義市",
+      "school": "嘉義北興國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-97",
+      "period": "114下",
+      "date": "0305",
+      "county": "台北市",
+      "school": "台北天母國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    },
+    {
+      "id": "ws-98",
+      "period": "114下",
+      "date": "0330",
+      "county": "台中市",
+      "school": "台中曉明女中",
+      "topic": "tool",
+      "topicLabel": "互動教學工具"
+    },
+    {
+      "id": "ws-99",
+      "period": "114下",
+      "date": "0420",
+      "county": "高雄市",
+      "school": "高雄民族國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-100",
+      "period": "114下",
+      "date": "0512",
+      "county": "新北市",
+      "school": "新北中山國中",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-101",
+      "period": "114下",
+      "date": "0604",
+      "county": "新北市",
+      "school": "新北恆毅中學",
+      "topic": "ai",
+      "topicLabel": "AI融入教學/生成式AI應用"
+    },
+    {
+      "id": "ws-102",
+      "period": "114下",
+      "date": "0608",
+      "county": "高雄市",
+      "school": "高雄鳳甲國中",
+      "topic": "general",
+      "topicLabel": "一般共通數位應用"
+    }
+  ]
+}
