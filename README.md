@@ -26,12 +26,3 @@ dashboard-project/
 └── .env.example
 ```
 
-## 本機執行
-
-```bash
-npm install
-# 編輯 .env，填入 GEMINI_API_KEY
-npm start
-```
-
-開啟 http://localhost:3000
